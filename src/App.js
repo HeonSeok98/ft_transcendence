@@ -6,13 +6,14 @@ import createPages from './pages/index.js'
 export default class App extends Component {
     template() {
         return `
-        <header>
-            <a href="#/home">home</a>
-        </header>
-        <main></main>
+        <main>
+        </main>
         `;
     }
-
+            // <a href="#/home">home</a>
+            // <div class="container-fluid p-5 bg-primary text-white text-center">
+            //     <h1> 흐에 </h1>
+            // </div>
             // <a href="#/">login</a>
             // <a href="#/home">home</a>
             // <a href="#/lobby">lobby</a>
