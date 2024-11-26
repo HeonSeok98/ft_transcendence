@@ -16,6 +16,14 @@
     margin: 0;
 }
 
+.custom-button {
+    background-color: rgba(14, 180, 252, 0.6);
+}
+
+.custom-button:hover {
+    background-color: rgba(14, 180, 252);
+}
+
 @media (max-width: 992px) {
     .container {
         grid-template-columns: repeat(2, 1fr);

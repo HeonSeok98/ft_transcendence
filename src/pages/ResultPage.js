@@ -1,12 +1,12 @@
 
 import Component from '../core/Component.js';
 
-export default class Result extends Component {
+export default class ResultPage extends Component {
     template() {
         return `
             <header class="d-flex px-5" style="height: 12vh; border-bottom: 2px solid #0EB4FC;">
-                <button class="my-auto border-0 fs-5 text-white fw-bold rounded-pill" style="width: 9rem; height: 3rem; background-color: rgba(14, 180, 252, 0.6);">42 PONG</button>
-                <button class="my-auto ms-auto border-0 fs-5 text-white fw-bold rounded-pill" style="width: 9rem; height: 3rem; background-color: rgba(14, 180, 252, 0.6);">Exit</button>
+                <button class="my-auto border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="logo-button">42 PONG</button>
+                <button class="my-auto ms-auto border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="exit-button">Exit</button>
             </header>
             <div class="p-5" style="width: 100%; height: 88vh;">
                 <div class="d-flex flex-column rounded-5 p-3" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25);">
@@ -18,6 +18,18 @@ export default class Result extends Component {
                 </div>
             </div>
         `;
+    }
+
+    setEvent() {
+
+        this.addEvent('click', '#logo-button', () => {
+            window.location.hash = '/home';
+        });
+
+        this.addEvent('click', '#exit-button', () => {
+            window.location.hash = '/lobby';
+        });
+
     }
 }
 

@@ -39,6 +39,7 @@ export default class App extends Component {
         router.addRoute('#/game', pages.game);
         router.addRoute('#/result', pages.result);
         router.addRoute('#/gamelog', pages.gamelog);
+        router.addRoute('#/counter', pages.counter);
         router.start();
     }
 }

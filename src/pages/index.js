@@ -8,6 +8,7 @@ import RoomFourPage from './RoomFourPage.js';
 import GamePage from './GamePage.js';
 import ResultPage from './ResultPage.js';
 import GameLogPage from './GameLogPage.js';
+import CounterPage from './CounterPage.js';
 
 export default (main) => {
     const login = () => new LoginPage(main);
@@ -19,6 +20,7 @@ export default (main) => {
     const game = () => new GamePage(main);
     const result = () => new ResultPage(main);
     const gamelog = () => new GameLogPage(main);
+    const counter = () => new CounterPage(main);
 
     return {
         login,
@@ -29,6 +31,7 @@ export default (main) => {
         room4,
         game,
         result,
-        gamelog
+        gamelog,
+        counter
     };
 };

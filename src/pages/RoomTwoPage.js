@@ -1,12 +1,12 @@
 
 import Component from '../core/Component.js';
 
-export default class RoomTwo extends Component {
+export default class RoomTwoPage extends Component {
     template() {
         return `
             <header class="d-flex px-5" style="height: 12vh; border-bottom: 2px solid #0EB4FC;">
-                <button class="my-auto border-0 fs-5 text-white fw-bold rounded-pill" style="width: 9rem; height: 3rem; background-color: rgba(14, 180, 252, 0.6);">42 PONG</button>
-                <button class="my-auto ms-auto border-0 fs-5 text-white fw-bold rounded-pill" style="width: 9rem; height: 3rem; background-color: rgba(14, 180, 252, 0.6);">Exit</button>
+                <button class="my-auto border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="logo-button">42 PONG</button>
+                <button class="my-auto ms-auto border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="exit-button">Exit</button>
             </header>
             <div class="p-5" style="width: 100%; height: 88vh;">
                 <div class="rounded-5" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25);">
@@ -33,10 +33,26 @@ export default class RoomTwo extends Component {
                                 <input class="border-0 text-white" style="background-color: rgba(14, 180, 252, 0.6);" type="submit" value="Enter">
                             </form>
                         </div>
-                        <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill" style="width: 15rem; height: 6rem; background-color: rgba(14, 180, 252, 0.6);">Start</button>
+                        <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill custom-button" style="width: 15rem; height: 6rem;" id="start-button">Start</button>
                     </div>
                 </div>
             </div>
         `;
+    }
+
+    setEvent() {
+
+        this.addEvent('click', '#logo-button', () => {
+            window.location.hash = '/home';
+        });
+
+        this.addEvent('click', '#exit-button', () => {
+            window.location.hash = '/lobby';
+        });
+
+        this.addEvent('click', '#start-button', () => {
+            window.location.hash = '/game';
+        });
+
     }
 }
