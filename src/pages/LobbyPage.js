@@ -23,13 +23,9 @@ export default class LobbyPage extends Component {
         `).join('');
 
         return `
-            <header class="d-flex px-5" style="height: 12vh; border-bottom: 2px solid #0EB4FC;">
-                <button class="m-4 border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="logo-button">42 PONG</button>
-                <button class="m-4 ms-auto border-0 fs-5 text-white fw-bold rounded-pill custom-button" style="width: 9rem; height: 3rem;" id="makeroom-button">Make room</button>
-            </header>
             <div class="parent" style="">
                 <div class="parent" style="height: 100%; background-color: rgba(14, 180, 252, 0.25);">
-                    <ul class="container">
+                    <ul class="lobby-container">
                         ${roomItems}
                     </ul>
                 </div>
@@ -38,14 +34,6 @@ export default class LobbyPage extends Component {
     }
 
     setEvent() {
-
-        this.addEvent('click', '#logo-button', () => {
-            window.location.hash = '/home';
-        });
-
-        this.addEvent('click', '#makeroom-button', () => {
-            window.location.hash = '/select';
-        });
 
         this.addEvent('click', '#room2-button', () => {
             window.location.hash = '/room2';

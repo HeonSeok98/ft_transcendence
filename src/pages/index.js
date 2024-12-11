@@ -10,6 +10,8 @@ import ResultPage from './ResultPage.js';
 import GameLogPage from './GameLogPage.js';
 import CounterPage from './CounterPage.js';
 
+import UserCard from '../components/UserCard.js';
+
 export default (main) => {
     const login = () => new LoginPage(main);
     const home = () => new HomePage(main);
@@ -22,6 +24,8 @@ export default (main) => {
     const gamelog = () => new GameLogPage(main);
     const counter = () => new CounterPage(main);
 
+    const usercard = () => new UserCard(main);
+
     return {
         login,
         home,
@@ -32,6 +36,7 @@ export default (main) => {
         game,
         result,
         gamelog,
-        counter
+        counter,
+        usercard
     };
 };
