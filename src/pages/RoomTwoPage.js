@@ -20,19 +20,19 @@ export default class RoomTwoPage extends Component {
         };
 
         return `
-            <div class="p-5" style="width: 100%; height: 88vh;">
-                <div class="rounded-5" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25);">
-                    <div class="d-flex justify-content-evenly" style="width: 100%; height: 65%;">
-                        <div data-component="usercard" class="m-auto" style="width: 350px; height: 350px;">
+            <div class="p-3" style="width: 100%; height: 88vh;">
+                <div class="d-flex flex-column justify-content-evenly rounded-5 p-3" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25); overflow: auto;">
+                    <div class="room-container d-flex justify-content-evenly" style="width: 100%;">
+                        <div data-component="usercard" class="user-card" style="width: 300px; height: 350px;">
                         </div>
-                        <div data-component="usercard" class="m-auto" style="width: 350px; height: 350px;">
+                        <div data-component="usercard" class="user-card" style="width: 300px; height: 350px;">
                         </div>
                     </div>
-                    <div class="d-flex justify-content-evenly" style="width: 100%; height: 35%;">
-                        <div data-component="chatting" class="d-flex flex-column m-auto" style="width: 50vw; height: 20vh; background-color: rgba(14, 180, 252, 0.25);"></div>
-                        <div class="d-flex flex-column">
-                            <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill custom-button" style="width: 15rem; height: 6rem;" id="exit-button">Exit</button>
-                            <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill custom-button" style="width: 15rem; height: 6rem;" id="start-button">Start</button>
+                    <div class="d-flex justify-content-evenly" style="width: 100%;">
+                        <div data-component="chatting" class="d-flex flex-column m-2" style="width: 80%; height: 12rem; background-color: rgba(14, 180, 252, 0.25);"></div>
+                        <div class="d-flex flex-column m-2">
+                            <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill custom-button" style="width: 10rem; height: 4rem;" id="exit-button">Exit</button>
+                            <button class="m-auto border-0 fs-1 text-white fw-bold rounded-pill custom-button" style="width: 10rem; height: 4rem;" id="start-button">Start</button>
                         </div>
                     </div>
                 </div>
