@@ -21,7 +21,7 @@ export default class RoomTwoPage extends Component {
 
         return `
             <div class="p-3" style="width: 100%; height: 88vh;">
-                <div class="d-flex flex-column justify-content-evenly rounded-5 p-3" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25); overflow: auto;">
+                <div class="d-flex flex-column justify-content-start rounded-5 p-3" style="width: 100%; height: 100%; background-color: rgba(14, 180, 252, 0.25); overflow: auto;">
                     <div class="room-container d-flex justify-content-evenly" style="width: 100%;">
                         <div data-component="usercard" class="user-card" style="width: 300px; height: 350px;">
                         </div>
