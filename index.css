@@ -31,6 +31,26 @@
 
 .home-button {
     margin: auto;
+    width: 21rem;
+    height: 7rem;
+}
+
+.home-card {
+    width: 25rem;
+    height: 33rem;
+}
+
+@media (max-width: 1000px) {
+
+    .home-button {
+        width: 18rem;
+        height: 6rem;
+    }
+
+    .home-card {
+        width: 22rem;
+        height: 30rem;
+    }
 }
 
 @media (max-width: 992px) {
