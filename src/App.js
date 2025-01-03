@@ -7,7 +7,7 @@ import createPages from './pages/index.js'
 export default class App extends Component {
     template() {
         return `
-        <header>헤더임 ㅋ</header>
+        <header></header>
         <main></main>
         `;
     }
